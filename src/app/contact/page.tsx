@@ -1,5 +1,3 @@
-import BarChart from "../components/Barchart";
-import Barchart from "../components/Barchart";
 import ContactHero from "../components/ContactHero";
 import Container from "../components/Container";
 import { PageWrapper } from "../components/PageWrapper";
