@@ -1,15 +1,14 @@
-import React from "react";
 import Container from "./Container";
 import HeroTitle from "./ui/HeroTitle";
 
-const Hero = () => {
+const ContactHero = () => {
   return (
     <section className="h-auto bg-zinc-900">
       <Container>
         <div className="grid grid-cols-1 py-10 md:grid-cols-2">
           <div>
             {/* Where you add the hero text */}
-            <HeroTitle title="HELLO I'M ARSENIO KIMANI" />
+            <HeroTitle title="WHO IS ARSENIO KIMANI" />
           </div>
           <div className="relative">
             <div className="m-6 flex flex-col rounded-[16px] border-[0.5px] border-white/30 bg-black p-6 lg:absolute lg:bottom-1/2">
@@ -28,4 +27,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default ContactHero;

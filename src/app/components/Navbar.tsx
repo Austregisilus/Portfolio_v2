@@ -15,7 +15,6 @@ import Button from "./ui/Button";
 const navigation = [
   { id: 1, name: "home", to: "/" },
   { id: 2, name: "contact", to: "/contact" },
-  { id: 3, name: "project", to: "/projects" },
 ];
 
 const Navbar = () => {

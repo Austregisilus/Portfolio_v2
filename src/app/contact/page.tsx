@@ -1,20 +1,21 @@
+import BarChart from "../components/Barchart";
+import Barchart from "../components/Barchart";
+import ContactHero from "../components/ContactHero";
 import Container from "../components/Container";
 import { PageWrapper } from "../components/PageWrapper";
+import Talents from "../components/Talents";
 import Timeline from "../components/Timeline";
+import ScrollButton from "../components/ui/ScrollButton";
 
 export default function Contact() {
   return (
     <PageWrapper>
-      <h1>
-        <Container>
-          <div className="h-screen">
-            <h1 className="bg-gradient-to-b from-white via-slate-200 to-black bg-clip-text text-heading -tracking-[0.8rem] text-transparent">
-              Please just work
-            </h1>
-          </div>
-        </Container>
-      </h1>
+      <ContactHero />
+      <Container>
+        <Talents />
+      </Container>
       <Timeline />
+      <ScrollButton />
     </PageWrapper>
   );
 }

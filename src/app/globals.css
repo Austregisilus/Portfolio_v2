@@ -60,3 +60,19 @@ select:-webkit-autofill:focus {
   background-color: #555;
   transition: background-color 500ms ease-in-out;
 }
+
+::selection {
+  background-color: rgb(255, 0, 85);
+  color: whitesmoke;
+}
+
+::-moz-selection {
+  background-color: rgb(255, 0, 85);
+  color: whitesmoke;
+}
+
+/* Internet Explorer */
+::-ms-selection {
+  background-color: rgb(255, 0, 85);
+  color: whitesmoke;
+}
