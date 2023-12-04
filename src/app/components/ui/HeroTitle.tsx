@@ -29,7 +29,7 @@ const HeroTitle: React.FC<Props> = ({ title }: Props) => {
             type: "spring",
             ease: [0.45, 0, 0.55, 1],
           }}
-          className="xs:text-[8rem] bg-gradient-to-b from-white via-slate-200 to-black bg-clip-text -tracking-[0.8rem] text-transparent sm:text-[9rem] lg:text-heading"
+          className="xs:text-[8rem] bg-gradient-to-b from-white via-slate-200 to-black bg-clip-text text-[7rem] -tracking-[0.8rem] text-transparent sm:text-[9rem] lg:text-heading"
           aria-hidden="true"
         >
           {word}
