@@ -2,6 +2,7 @@ import React from "react";
 import BarChart from "./Barchart";
 import Radarchart from "./Radarchart";
 import SectionIntro from "./ui/SectionIntro";
+import NormalCard from "./ui/NormalCard";
 
 const Talents = () => {
   return (
@@ -12,7 +13,7 @@ const Talents = () => {
           <BarChart />
         </div>
         <div className="flex w-full flex-col px-4 lg:w-2/6 lg:items-center lg:justify-center">
-          <div className="rounded-[16px] border-[0.5px] border-white/70 bg-zinc-950 px-6 py-6">
+          <NormalCard className="rounded-[16px] border-[0.5px] border-white/70 bg-zinc-950 px-6 py-6">
             <h6 className="py-5 text-title">Technical skills...</h6>
             <p className="text-p leading-[2.4rem] text-white/70">
               Technical skills are the key to a successful career. They are
@@ -28,12 +29,12 @@ const Talents = () => {
               <li>Javascript</li>
               <li>Others</li>
             </ul>
-          </div>
+          </NormalCard>
         </div>
       </div>
       <div className="my-10 flex flex-col lg:flex-row">
         <div className="flex w-full flex-col items-center justify-center px-4 lg:w-2/6">
-          <div className="rounded-[16px] border-[0.5px] border-white/70 bg-zinc-950 px-6 py-6">
+          <NormalCard className="rounded-[16px] border-[0.5px] border-white/70 bg-zinc-950 px-6 py-6">
             <h6 className="py-5 text-title">Soft skills...</h6>
             <p className="text-p leading-[2.4rem] text-white/70">
               Soft skills are personal attributes that help one interact
@@ -49,7 +50,7 @@ const Talents = () => {
               <li>Problem solving</li>
               <li>Creativity</li>
             </ul>
-          </div>
+          </NormalCard>
         </div>
         <div className="w-full lg:w-4/6">
           <Radarchart />

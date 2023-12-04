@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import SectionIntro from "./ui/SectionIntro";
+import NormalCard from "./ui/NormalCard";
 
 const AboutMe = () => {
   return (
@@ -16,7 +17,7 @@ const AboutMe = () => {
               <div className="h-[200px] w-[175px] -rotate-12 rounded-[16px] bg-slate-700"></div>
             </figure>
           </div>
-          <article className="col-span-2 rounded-[16px] border-[0.5px] border-white/50 bg-black p-10">
+          <NormalCard className="col-span-2 rounded-[16px] border-[0.5px] border-white/50 bg-black p-10">
             <h6 className="py-5 text-title">Story so far...</h6>
             <p className="text-p leading-[2.4rem] text-white/70">
               My name is Arsenio Kimani. A graduate from Strathmore University
@@ -30,7 +31,7 @@ const AboutMe = () => {
               get where you are today and that you want to advance my skills and
               experience
             </p>
-          </article>
+          </NormalCard>
         </div>
       </Container>
     </section>

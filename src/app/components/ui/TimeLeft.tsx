@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import NormalCard from "./NormalCard";
 
 interface Props {
   Heading: string;
@@ -12,7 +13,7 @@ interface Props {
 
 const TimeLeft = ({ Heading, Pic, Content, Year, className }: Props) => {
   return (
-    <div>
+    <NormalCard>
       {/* Timeline left side */}
       <div className="flex justify-start">
         <div className="mt-[20px] w-full rounded-[16px] border-[0.5px] border-white/50 bg-black p-4 md:w-5/12 md:p-8">
@@ -38,7 +39,7 @@ const TimeLeft = ({ Heading, Pic, Content, Year, className }: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </NormalCard>
   );
 };
 
