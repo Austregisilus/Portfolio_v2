@@ -12,6 +12,23 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Button from "./ui/Button";
 
+const variants = {
+  initial: {
+    opacity: 0,
+    y: -100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.45, 0, 0.55, 1],
+      delay: 1.5,
+      type: "spring",
+    },
+  },
+};
+
 const navigation = [
   { id: 1, name: "home", to: "/" },
   { id: 2, name: "contact", to: "/contact" },
@@ -19,15 +36,15 @@ const navigation = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState(navigation[0].id);
   const path = usePathname();
 
-  const handleClickLink = (id: number) => {
-    setSelected(id);
-  };
-
   return (
-    <header className="z-50 h-auto border-b-[1px] border-white/20">
+    <motion.header
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      className="z-50 h-auto border-b-[1px] border-white/20"
+    >
       <Container>
         <div className="flex flex-row items-center justify-between">
           {/* Logo for the website */}
@@ -124,7 +141,7 @@ const Navbar = () => {
           </Transition>
         </div>
       </Container>
-    </header>
+    </motion.header>
   );
 };
 

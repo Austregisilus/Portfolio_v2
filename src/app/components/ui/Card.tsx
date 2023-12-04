@@ -20,9 +20,9 @@ const Card = ({ id, image, name, description }: Props) => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{
-        duration: 0.5,
-        delay: id * 0.1,
-        ease: "easeInOut",
+        duration: 1,
+        delay: id * 0.5,
+        ease: [0.45, 0, 0.55, 1],
         type: "spring",
       }}
       key={id}

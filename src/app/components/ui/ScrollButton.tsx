@@ -30,7 +30,7 @@ const ScrollButton = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="fixed bottom-[20px] right-[20px] rounded-full bg-zinc-500 p-10"
+          className="fixed bottom-[20px] right-[50px] rounded-full bg-zinc-500 p-10"
           onClick={scrollToTop}
         >
           <AiOutlineArrowUp className="h-10 w-10" />

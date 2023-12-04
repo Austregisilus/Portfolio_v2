@@ -27,6 +27,7 @@ const ProjectCard = ({ id, name, description, image }: Props) => {
         opacity: opacity,
       }}
       key={id}
+      transition={{ duration: 1, ease: [0.45, 0, 0.55, 1], type: "spring" }}
       className="my-10 flex flex-row rounded-[16px] bg-zinc-900"
     >
       <div className="grid grid-cols-1 place-content-center place-items-center gap-10 md:grid-cols-2">

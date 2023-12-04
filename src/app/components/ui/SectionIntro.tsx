@@ -12,7 +12,7 @@ const SectionIntro = ({ subtitle, title }: Props) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1, ease: [0.45, 0, 0.55, 1], type: "spring" }}
       viewport={{ once: true }}
       className="mx-auto my-6 text-center"
     >
