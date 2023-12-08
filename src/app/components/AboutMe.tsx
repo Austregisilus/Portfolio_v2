@@ -2,6 +2,8 @@ import React from "react";
 import Container from "./Container";
 import SectionIntro from "./ui/SectionIntro";
 import NormalCard from "./ui/NormalCard";
+import Image from "next/image";
+import ProfilePic from "../../../public/images/DSC_0046.jpg";
 
 const AboutMe = () => {
   return (
@@ -14,7 +16,13 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 place-content-center place-items-center gap-16 py-32 lg:grid-cols-3">
           <div>
             <figure>
-              <div className="h-[200px] w-[175px] -rotate-12 rounded-[16px] bg-slate-700"></div>
+              <div className="h-full w-full -rotate-12 rounded-[16px] bg-slate-700">
+                <Image
+                  src={ProfilePic}
+                  alt="Profile picture"
+                  className="object-fit h-[300px] w-full rounded-[16px]"
+                />
+              </div>
             </figure>
           </div>
           <NormalCard className="col-span-2 rounded-[16px] border-[0.5px] border-white/50 bg-black p-10">
