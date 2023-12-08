@@ -19,6 +19,7 @@ const NormalCard = ({ className, children }: Props) => {
       animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
       transition={{
         duration: 1,
+        delay: 0.5,
         ease: [0.45, 0, 0.55, 1],
         type: "spring",
       }}
