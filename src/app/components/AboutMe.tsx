@@ -16,11 +16,11 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 place-content-center place-items-center gap-16 py-32 lg:grid-cols-3">
           <div>
             <figure>
-              <div className="h-full w-full -rotate-12 rounded-[16px] bg-slate-700">
+              <div className="h-full w-full rounded-[16px] bg-white/70">
                 <Image
                   src={ProfilePic}
                   alt="Profile picture"
-                  className="object-fit h-[300px] w-full rounded-[16px]"
+                  className="object-fit h-[300px] w-full -rotate-12 rounded-[16px] duration-200 hover:rotate-0 hover:duration-300"
                 />
               </div>
             </figure>
