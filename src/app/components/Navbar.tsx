@@ -31,7 +31,7 @@ const variants = {
 
 const navigation = [
   { id: 1, name: "home", to: "/" },
-  { id: 2, name: "contact", to: "/contact" },
+  { id: 2, name: "about me", to: "/aboutme" },
 ];
 
 const Navbar = () => {
