@@ -33,6 +33,10 @@ export default function RootLayout({
           content="https://photos.google.com/photo/AF1QipMYkaxLK3lg1bimo3GkTYaaobiulw5J3RQ-50t6"
         />
         <meta property="og:title" content="Arsenio's portfolio" />
+        <meta
+          name="google-site-verification"
+          content="71UNBxL6cIf6qvWGcR9yaGnsd6sPjA_b1ck6TOG2eXQ"
+        />
         <meta property="og:url" content="arsenio.vercel.app" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
